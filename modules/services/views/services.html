@@ -1,0 +1,40 @@
+<div ui-view="headers">
+	<div class="container" ng-controller="ServicesCtrl">
+		<h1>Service Client Maker</h1>
+		{{message}}
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>&nbsp;</th>
+				</tr>
+				<tr>
+					<td>
+						<input class="form-control" ng-model="serviceClient.name" />
+					</td>
+					<td>
+						<button class="btn btn-primary" ng-click="create()">Add</button>
+						<button class="btn btn-primary" ng-click="update()">Update</button>
+						<button class="btn btn-primary" ui-sref="services.detail">22222</button>
+						<button class="btn btn-primary" ui-sref="phonebook">phonebook</button>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="serviceClient in serviceClients">
+					<td>
+						{{serviceClient.name}}
+					</td>
+					<td>
+						<button ng-click="remove(serviceClient._id)" class="btn btn-danger">Remove</button>
+					</td>
+					<td>
+						<button ng-click="select(serviceClient._id)" class="btn btn-warning">Select</button>
+					</td>
+				</tr>
+			</tbody>
+			
+	</div>
+</div>
+<div ui-view="header"></div>
+<div ui-view="body">IM TO BE REPLACED BY CHILD</div>

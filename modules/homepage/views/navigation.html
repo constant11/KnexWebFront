@@ -1,0 +1,62 @@
+<div class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand knex_s" ui-sref="homepage"></a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	  <!-- <ul class="nav navbar-nav">
+	  <li class="active">
+		<li><a href="index.php?module=Employees&action=index">Employees</a></li>
+		<li><a href="index.php?module=LoginHistory&action=index">Login History</a></li>
+		<li><a href="index.php?module=SalaryHistory&action=ListView">Salary History</a></li>
+		<li><a href="index.php?module=LoginHistory&action=ExtractLogs">Extract Logs</a></li>
+	  </ul> -->
+
+	  <ul class="nav navbar-nav navbar-right">
+		<li ng-repeat="headerLabel in headerLabels">
+			<a ui-sref="{{headerLabel.ref}}">
+				{{headerLabel.label}}
+			</a>
+		</li>
+	
+		<!--
+			$rightMenu = array('Company','Showroom','Collections','Functionality','Press','Contact');
+			foreach($rightMenu as $value){
+				$active = '';
+				if($value == $module)
+					$active = 'active';
+				echo "<li class='{$active}'><a href='/Knex/{$value}/'>{$value}</a></li>";
+			}
+		
+		<!--
+		<li><a href="/Knex/Company/">Company</a></li>
+		<li><a href="#">Showroom</a></li>
+		<li><a href="/Knex/Collections">Collections</a></li>
+		<li><a href="#">Functionality</a></li>
+		<li><a href="#">Press</a></li>
+		<li><a href="#">Contact</a></li>
+		-->
+		
+		<!--<li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Action</a></li>
+			<li><a href="#">Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Separated link</a></li>
+		  </ul>
+		</li>-->
+	  </ul>
+	</div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div>

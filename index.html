@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>K'NEX</title>
+	<link href='public/css/bootstrap.css' rel='stylesheet' />
+	<link href='public/css/knex.less' rel='stylesheet/less' />
+	<!-- <link href='public/css/knex.css' rel='stylesheet' /> -->
+	<script src='public/js/less.js'></script>
+	<script src='public/js/jquery-1.10.2.min.js'></script>
+	<script src='public/js/bootstrap.js'></script>
+	<script src='public/js/angular.js'></script>
+	<!-- <script src='public/js/angular-route.js'></script> -->
+	<script src='public/js/angular-ui-router.js'></script>
+	<script src='public/js/app.js'></script>
+	<script src='public/modules/homepage/controller.js'></script>
+	<script src='public/modules/services/controller.js'></script>
+	<script src='public/modules/phonebook/controller.js'></script>
+	<script src='public/modules/company/controller.js'></script>
+	<script src='public/js/controller.js'></script>
+</head>
+<body ng-app='myApp'>
+	<div class="content_wrapper">
+		<div ui-view='header' id="content_header"></div>
+		<div ui-view='body' id="content_body"></div>
+		<div ui-view='footer' id="content_footer"></div>
+	</div>
+</body>
+</html>

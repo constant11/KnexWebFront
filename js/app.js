@@ -35,6 +35,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 				templateUrl: 'public/modules/company/views/_diagonal_image.html',
 				controller: 'CompanyCtrl'
 			  },
+			  'footer@': {
+				templateUrl: 'public/modules/company/views/footer.html',
+				controller: 'CompanyCtrl'
+			  },
 			},
 			data: {
 				func: 'company_design'
@@ -75,6 +79,15 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 			},
 			data: {
 				func: 'company_product'
+			}
+		})			
+		.state('undermaintenance', {
+			url:'/undermaintenance',
+			parent:'homepage',
+			views: {
+			  'body@': {
+				templateUrl: 'public/modules/_system/undermaintenance.html'
+			  }
 			}
 		})	
 		.state('services', {

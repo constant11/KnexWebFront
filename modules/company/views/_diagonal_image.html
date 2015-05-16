@@ -1,12 +1,18 @@
 <div class="image_in_diagonal" ui-view="diagonal_image">
 	<div class="{{diagonalImage_class}}">
-		<div class="overlay_mid">
+		<div id="desc_min" class="overlay_mid">
 			<div class="text_container">
 				<h1>{{diagonalImage_title}}</h1>
-				<div class="right_arw"></div>
+				<div class="right_arw" ng-click="show_more()"></div>
 				<p>{{diagonalImage_body}}</p>
 
-				<a>read more</a>
+				<a ng-click="show_more()">read more</a>
+			</div>
+		</div>
+		<div id="desc_max" class="overlay_full hide">
+			<div class="text_container">
+				<div class="left_arw" ng-click="show_less()"></div>
+				<p ng-bind-html="diagonalImage_body_max"></p>
 			</div>
 		</div>
 	</div>

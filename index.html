@@ -2,6 +2,16 @@
 <head>
 	<title>K'NEX</title>
 	<link href='public/css/bootstrap.css' rel='stylesheet' />
+
+</head>
+<body ng-app='myApp'>
+	<div class="content_wrapper">
+		<div ui-view='header' id="content_header"></div>
+		<div ui-view='body' id="content_body"></div>
+		<div ui-view='footer' id="content_footer"></div>
+	</div>
+</body>
+
 	<link href='public/css/knex.less' rel='stylesheet/less' />
 	<!-- <link href='public/css/knex.css' rel='stylesheet' /> -->
 	<script src='public/js/less.js'></script>
@@ -16,12 +26,5 @@
 	<script src='public/modules/phonebook/controller.js'></script>
 	<script src='public/modules/company/controller.js'></script>
 	<script src='public/js/controller.js'></script>
-</head>
-<body ng-app='myApp'>
-	<div class="content_wrapper">
-		<div ui-view='header' id="content_header"></div>
-		<div ui-view='body' id="content_body"></div>
-		<div ui-view='footer' id="content_footer"></div>
-	</div>
-</body>
+	
 </html>

@@ -1,4 +1,34 @@
+/*DEVELOPMENT*/
 @file_path: "http://localhost/KnexAngular2";
+
+/*PRODUCTION*/
+/*@file_path: "http://knex-ph.com/";*/
+
+
+@winwidth: `$(window).width()`;
+@winheight: `$(document).height()`;
+@width_d2: (@winwidth / 2);
+@height_diag: (tan(5deg) * @width_d2);
+
+@height_diag_container: (@winheight * 0.56);
+
+@homepage_img_height: (@winwidth * 1728/3039);
+@homepage_img_dis: (((@homepage_img_height - @height_diag_container) / 4) * 0.30);
+
+@design_img_height: (@winwidth * 320/576);
+@design_img_dis: ((@design_img_height - @height_diag_container) / 4);
+
+@management_img_height: (@winwidth * 3400/4800);
+@management_img_dis: ((@management_img_height - @height_diag_container) / 4);
+
+@site_img_height: (@winwidth * 200/300);
+@site_img_dis: ((@site_img_height - @height_diag_container) / 4);
+
+@product_img_height: (@winwidth * 1339/2190);
+@product_img_dis: ((@product_img_height - @height_diag_container) / 4);
+
+
+
 
 div{
 	/*font-family: Roboto,Arial,sans-serif;*/
@@ -42,6 +72,7 @@ body {
 .navbar-default {
     background-color: #606060;
     border-color: #606060;
+    z-index: 5;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -184,6 +215,7 @@ footer ul {
     background: url('@{file_path}/public/images/system/sprite1.png') -31px -220px;
     transform: scale(0.4);
     transform-origin: left top;
+    cursor: pointer;
 }
 
 .right_arw {
@@ -193,6 +225,20 @@ footer ul {
     background: url('@{file_path}/public/images/system/sprite1.png') -91px -220px;
     transform: scale(0.4);
     transform-origin: left top;
+    cursor: pointer;
+}
+
+.mih_l {
+    /*left: 0px;*/
+    width: 450px;
+    height: 160px;
+    background: url('@{file_path}/public/images/system/mih.png');
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 0px;
+/*    transform: scale(0.4);
+    transform-origin: left top;*/
 }
 
 .wood_bg {
@@ -262,7 +308,8 @@ footer ul {
  	/*background: none repeat scroll 0 0 yellow;*/
     height: 200%;
     position: relative;
-    top: -50%;
+    /*top: -50%;*/
+    top: ~"-@{height_diag}px";
     transform: skewY(-5deg);
     width: 100%;
 }
@@ -274,15 +321,37 @@ footer ul {
 }
 
 .overlay_full {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
 	height: 100%;
+}
+
+.overlay_full .text_container{
+	width: 60%;
+	height: 50%;
+	top: 10%;
+	left: 0;
+	right: 0;
+	margin-left: 6.25%;
+	position: relative;
+	color: #D5C6AD;
+}
+
+.overlay_full .text_container div{
+    display: inline-block;
+    margin-left: 15px;
+    position: relative;
+    top: 33px;
+}
+
+.overlay_full .text_container p{
+
 }
 
 .overlay_mid .text_container{
 	width: 75%;
 	height: 50%;
-	top: 25%;
+	top: 10%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -309,39 +378,57 @@ footer ul {
     padding-right: 5px;
     text-decoration: none;
     color: #D5C6AD;
+    cursor: pointer;
 }
 
 .iid_homepage {
-	background: url('@{file_path}/public/images/system/K_recep_image.jpg') 0px 0px;
-	background-size: 90%;
+	background: url('@{file_path}/public/images/system/K_recep_image.jpg');
+	background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0px ~"-@{homepage_img_dis}px"; 
+    /*background-position: center; */
+    /*background-size: 80px 60px;*/
 	width: 100%;
 	height: 100%;
 }
 
 .iid_company_design {
-	background: url('@{file_path}/public/images/system/site-built-cabinetry-2.jpg') 0px 49%;
+	background: url('@{file_path}/public/images/system/site-built-cabinetry-2.jpg');
 	background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0px ~"-@{design_img_height}px";
 	width: 100%;
 	height: 100%;
 }
 
 .iid_company_management {
-	background: url('@{file_path}/public/images/system/man.jpg') 0px 0px;
+	background: url('@{file_path}/public/images/system/man.jpg');
 	background-size: 90%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0px ~"-@{management_img_height}px"; 
 	width: 100%;
 	height: 100%;
 }
 
 .iid_company_product {
-	background: url('@{file_path}/public/images/system/mine_board.jpg') 0px 0px;
+	background: url('@{file_path}/public/images/system/mine_board.jpg');
 	background-size: 90%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0px ~"-@{product_img_height}px"; 
 	width: 100%;
 	height: 100%;
 }
 
 .iid_company_site {
-	background: url('@{file_path}/public/images/system/cabinet.jpg') 0px 0px;
-	background-size: 90%;
+	background: url('@{file_path}/public/images/system/cabinet.jpg');
+	background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0px ~"-@{site_img_height}px"; 
 	width: 100%;
 	height: 100%;
 }

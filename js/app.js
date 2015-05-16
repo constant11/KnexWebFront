@@ -100,7 +100,11 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 			views: {
 			  'body@': {
 				templateUrl: 'public/modules/_system/undermaintenance.html'
-			  }
+			  },
+			  'footer@': {
+				templateUrl: 'public/modules/company/views/footer.html',
+				controller: 'CompanyCtrl'
+			  },
 			}
 		})	
 		.state('services', {

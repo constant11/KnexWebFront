@@ -1,5 +1,5 @@
 /*DEVELOPMENT*/
-@file_path: "http://localhost/KnexAngular2";
+/*@file_path: "http://localhost/KnexAngular2";*/
 
 /*PRODUCTION*/
 /*@file_path: "http://knex-ph.com/";*/
@@ -28,17 +28,23 @@
 @product_img_dis: ((@product_img_height - @height_diag_container) / 4);
 
 
-
+@font-face {
+    font-family: myFirstFont;
+    /*src: url(http://www.example.org/mycustomfont.ttf) format("truetype");*/
+    src: url("../../public/css/isocpeur.ttf") format("truetype"),
+        url("../../public/css/isocpeur.woff") format('woff');
+}
 
 div{
 	/*font-family: Roboto,Arial,sans-serif;*/
 }
 
 body {
-	font-family: isocpeur;
+	font-family: myFirstFont;
 	min-height: 100%; 
 	padding: 0; 
 	margin: 0;
+	background-color: #606060;
 }
 
 .content_wrapper {
@@ -164,7 +170,7 @@ footer ul {
     left: 0px;
     width: 181px;
     height: 57px;
-    background: url("@{file_path}/public/images/system/sprite1.png") -34px -30px;
+    background: url("../../public/images/system/sprite1.png") -34px -30px;
     transform: scale(0.8);
 }
 
@@ -175,20 +181,20 @@ footer ul {
     width: 26px;
 }
 
-.icon_box > .ig_icon {
+.icon_box .ig_icon {
     left: 0px;
     width: 43px;
     height: 44px;
-    background: url('@{file_path}/public/images/system/sprite1.png') -232px -33px;
+    background: url('../../public/images/system/sprite1.png') -232px -33px;
     transform: scale(0.6);
     transform-origin: left top;
 }
 
-.icon_box > .fb_icon {
+.icon_box .fb_icon {
     left: 0px;
     width: 43px;
     height: 44px;
-    background: url('@{file_path}/public/images/system/sprite1.png') -285px -33px;
+    background: url('../../public/images/system/sprite1.png') -285px -33px;
     transform: scale(0.6);
     transform-origin: left top;
 }
@@ -203,7 +209,7 @@ footer ul {
     left: 0px;
     width: 323px;
     height: 105px;
-    background: url('@{file_path}/public/images/system/sprite1.png') -33px -101px;
+    background: url('../../public/images/system/sprite1.png') -33px -101px;
     transform: scale(0.6);
     transform-origin: left top;
 }
@@ -212,7 +218,7 @@ footer ul {
     left: 0px;
     width: 52px;
     height: 58px;
-    background: url('@{file_path}/public/images/system/sprite1.png') -31px -220px;
+    background: url('../../public/images/system/sprite1.png') -31px -220px;
     transform: scale(0.4);
     transform-origin: left top;
     cursor: pointer;
@@ -222,7 +228,7 @@ footer ul {
     left: 0px;
     width: 52px;
     height: 58px;
-    background: url('@{file_path}/public/images/system/sprite1.png') -91px -220px;
+    background: url('../../public/images/system/sprite1.png') -91px -220px;
     transform: scale(0.4);
     transform-origin: left top;
     cursor: pointer;
@@ -232,7 +238,7 @@ footer ul {
     /*left: 0px;*/
     width: 450px;
     height: 160px;
-    background: url('@{file_path}/public/images/system/mih.png');
+    background: url('../../public/images/system/mih.png');
 	background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -244,7 +250,7 @@ footer ul {
 .wood_bg {
 	width: 100%;
 	height: 100%;
-    background: url('@{file_path}/public/images/system/wood.jpg') 0 0;
+    background: url('../../public/images/system/wood.jpg') 0 0;
     background-size: 100% 100%
 }
 
@@ -382,7 +388,7 @@ footer ul {
 }
 
 .iid_homepage {
-	background: url('@{file_path}/public/images/system/K_recep_image.jpg');
+	background: url('../../public/images/system/K_recep_image.jpg');
 	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -394,7 +400,7 @@ footer ul {
 }
 
 .iid_company_design {
-	background: url('@{file_path}/public/images/system/site-built-cabinetry-2.jpg');
+	background: url('../../public/images/system/site-built-cabinetry-2.jpg');
 	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -404,7 +410,7 @@ footer ul {
 }
 
 .iid_company_management {
-	background: url('@{file_path}/public/images/system/man.jpg');
+	background: url('../../public/images/system/man.jpg');
 	background-size: 90%;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -414,7 +420,7 @@ footer ul {
 }
 
 .iid_company_product {
-	background: url('@{file_path}/public/images/system/mine_board.jpg');
+	background: url('../../public/images/system/mine_board.jpg');
 	background-size: 90%;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -424,7 +430,7 @@ footer ul {
 }
 
 .iid_company_site {
-	background: url('@{file_path}/public/images/system/cabinet.jpg');
+	background: url('../../public/images/system/cabinet.jpg');
 	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;

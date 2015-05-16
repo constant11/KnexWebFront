@@ -41,6 +41,19 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 			  },
 			},
 			data: {
+				func: 'company'
+			}
+		})
+		.state('company.company_design', {
+			url:'/company_design',
+			parent:'company',
+			views: {
+			  'diagonal_image@company': {
+				// templateUrl: 'public/modules/company/views/_diagonal_image.html',
+				controller: 'CompanyCtrl'
+			  },
+			},
+			data: {
 				func: 'company_design'
 			}
 		})	

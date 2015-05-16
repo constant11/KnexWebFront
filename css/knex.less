@@ -10,6 +10,8 @@
 @width_d2: (@winwidth / 2);
 @height_diag: (tan(5deg) * @width_d2);
 
+@height_diag2: (@height_diag * 2);
+
 @height_diag_container: (@winheight * 0.56);
 
 @homepage_img_height: (@winwidth * 1728/3039);
@@ -347,25 +349,38 @@ footer ul {
 }
 
 .overlay_full .text_container{
-	width: 60%;
+	width: 100%;
 	height: 50%;
-	top: 10%;
+	padding-top: 10%;
 	left: 0;
 	right: 0;
-	margin-left: 6.25%;
+	padding-left: 6.25%;
+	padding-right: 6.25%;
 	position: relative;
 	color: #D5C6AD;
+	overflow: hidden;
+	padding-bottom: ~"@{height_diag}px";
 }
 
-.overlay_full .text_container div{
+.overlay_full .left_arw{
     display: inline-block;
-    margin-left: 15px;
-    position: relative;
-    top: 33px;
+    /*margin-left: 15px;*/
+    position: absolute;
+    top: ~"@{height_diag2}px";
+    right: -10px;
+    left: auto;
+    z-index: 1;
+    margin-top: 10px;
 }
 
 .overlay_full .text_container p{
-
+	font-size: 15px;
+    position: relative;
+    top: 0px;
+}
+.overlay_mid .text_container p{
+	font-size: 15px;
+    position: relative;
 }
 
 .overlay_mid .text_container{

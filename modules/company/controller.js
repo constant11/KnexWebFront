@@ -28,6 +28,7 @@ app.controller('CompanyCtrl', function($state, $scope, $http, $location, $stateP
 	$scope.show_more = function(){
 		$("#desc_min").addClass("hide");
 		$("#desc_max").removeClass("hide");
+		$('#long_txt_cont').perfectScrollbar();
 		$('#long_txt_cont').perfectScrollbar('update'); 
 		console.log("sdasdsads");
 	}

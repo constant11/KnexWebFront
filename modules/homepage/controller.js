@@ -4,7 +4,7 @@ app.controller('HomePageCtrl', function($scope, $http, $location) {
 
 	$scope.headerLabels = [{'label':'Company', 'ref':'company'},{'label':'Showroom', 'ref':'undermaintenance'},
 							{'label':'Functionality', 'ref':'undermaintenance'},{'label':'Services', 'ref':'undermaintenance'},
-							{'label':'Collection', 'ref':'undermaintenance'},{'label':'Contact', 'ref':'undermaintenance'}];
+							{'label':'Collection', 'ref':'undermaintenance'},{'label':'Contact', 'ref':'contact_us'}];
 
 	$scope.diagonalImage_class = "iid_homepage";
 

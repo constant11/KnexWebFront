@@ -94,6 +94,19 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 				func: 'company_product'
 			}
 		})			
+		.state('contact_us', {
+			url:'/contact',
+			parent:'homepage',
+			views: {
+			  'body@': {
+				templateUrl: 'public/modules/_system/contact_us.html'
+			  },
+			  'footer@': {
+				templateUrl: 'public/modules/company/views/footer.html',
+				controller: 'CompanyCtrl'
+			  },
+			}
+		})				
 		.state('undermaintenance', {
 			url:'/undermaintenance',
 			parent:'homepage',

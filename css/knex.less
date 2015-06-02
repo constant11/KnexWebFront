@@ -31,10 +31,12 @@
 
 
 @font-face {
-    font-family: myFirstFont;
+    font-family: 'myFirstFont';
     /*src: url(http://www.example.org/mycustomfont.ttf) format("truetype");*/
-    src: url("../css/isocpeur.ttf") format("truetype"),
-        url("../css/isocpeur.woff") format('woff');
+    src: url('isocpeur.ttf') format('truetype'),
+        url('isocpeur.woff') format('woff');
+	font-weight: normal;
+    font-style: normal;
 }
 
 div{
@@ -42,7 +44,7 @@ div{
 }
 
 body {
-	font-family: isocpeur, myFirstFont;
+	font-family: myFirstFont;
 	min-height: 100%; 
 	padding: 0; 
 	margin: 0;
@@ -66,6 +68,7 @@ body {
 
 #content_body {
 	min-height: 100%;
+	height: 100%;
 }
 
 #content_footer {
@@ -263,7 +266,7 @@ footer ul {
 .wood_bg {
 	width: 100%;
 	height: 100%;
-    background: url('../images/system/wood.jpg') 0 0;
+    background: url('../images/system/wood_s.jpg') 0 0;
     background-size: 100% 100%
 }
 
@@ -278,13 +281,15 @@ footer ul {
 }
 
 .diagonal_navigation {
-    margin-top: -35px;
-    position: absolute;
+    /*margin-top: -35px;*/
+    padding-top: 1%;
+    position: relative;
     text-align: right;
-    top: 10%;
+    /*top: 10%;*/
     transform: rotate(5deg);
     -webkit-transform: rotate(5deg);
     width: 100%;
+    height: 10%;
 }
 
 .diagonal_navigation > p {
@@ -322,7 +327,7 @@ footer ul {
     -webkit-transform: skewY(5deg);
     width: 100%;
     overflow: hidden;
-    top: 10%;
+    /*top: 10%;*/
 }
 
 .image_in_diagonal {
@@ -417,7 +422,7 @@ footer ul {
 }
 
 .iid_homepage {
-	background: url('../images/system/K_recep_image.jpg');
+	background: url('../images/system/reception_s.jpg');
 	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -429,7 +434,7 @@ footer ul {
 }
 
 .iid_company_design {
-	background: url('../images/system/site-built-cabinetry-2.jpg');
+	background: url('../images/system/design_s.jpg');
 	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -439,8 +444,8 @@ footer ul {
 }
 
 .iid_company_management {
-	background: url('../images/system/man.jpg');
-	background-size: 90%;
+	background: url('../images/system/management_s.jpg');
+	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;
     background-position: 0px ~"-@{management_img_height}px"; 
@@ -449,8 +454,8 @@ footer ul {
 }
 
 .iid_company_product {
-	background: url('../images/system/mine_board.jpg');
-	background-size: 90%;
+	background: url('../images/system/green_board_s.jpg');
+	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;
     background-position: 0px ~"-@{product_img_height}px"; 
@@ -459,7 +464,7 @@ footer ul {
 }
 
 .iid_company_site {
-	background: url('../images/system/cabinet.jpg');
+	background: url('../images/system/production_s.jpg');
 	background-size: 100%;
     background-repeat: repeat;
     background-attachment: scroll;

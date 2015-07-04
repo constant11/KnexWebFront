@@ -2,7 +2,7 @@ app.controller('HomePageCtrl', function($scope, $http, $location) {
 
 	console.log("Hello From HomePageCtrl");
 
-	$scope.headerLabels = [{'label':'Company', 'ref':'company'},{'label':'Showroom', 'ref':'undermaintenance'},
+	$scope.headerLabels = [{'label':'Company', 'ref':'company'},{'label':'Showroom', 'ref':'showroom'},
 							{'label':'Functionality', 'ref':'undermaintenance'},{'label':'Services', 'ref':'undermaintenance'},
 							{'label':'Collection', 'ref':'undermaintenance'},{'label':'Contact', 'ref':'contact_us'}];
 

@@ -29,6 +29,7 @@
 @product_img_height: (@winwidth * 1339/2190);
 @product_img_dis: ((@product_img_height - @height_diag_container) / 4);
 
+@height_no_headfooter: (@winheight - 165);
 
 @font-face {
     font-family: 'myFirstFont';
@@ -68,7 +69,7 @@ body {
 
 #content_body {
 	min-height: 100%;
-	height: 100%;
+	/*height: 100%;*/
 }
 
 #content_footer {
@@ -273,7 +274,7 @@ footer ul {
 
 .body_backgroud {
 	width: 100%;
-	height: 100%;
+	height: ~"@{height_no_headfooter}px";
 }
 
 .background_overlay {
@@ -328,6 +329,8 @@ footer ul {
     width: 100%;
     overflow: hidden;
     /*top: 10%;*/
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .image_in_diagonal {

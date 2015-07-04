@@ -106,7 +106,17 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 				controller: 'CompanyCtrl'
 			  },
 			}
-		})				
+		})
+		.state('showroom', {
+			url:'/showroom',
+			parent:'homepage',
+			views: {
+			  'body@': {
+				templateUrl: 'public/modules/showroom/views/index.html',
+				controller: 'ShowroomCtrl'
+			  },				
+			}
+		})			
 		.state('undermaintenance', {
 			url:'/undermaintenance',
 			parent:'homepage',

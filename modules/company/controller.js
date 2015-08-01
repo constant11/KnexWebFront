@@ -44,7 +44,7 @@ app.controller('CompanyCtrl', function($state, $scope, $http, $location, $stateP
 		$scope.diagonalImage_body = "K'nex Modular Furniture Design is composed of specialist cabinetry architects, \
 									offering locally designed and manufactured kitchen cabinets, closet cabinets \
 									and the likes for a niche clientele. Our core focus is on the functionality of \
-									our furniture's, ensuring that all demands of the client are met.";
+									our furniture's, ensuring that all demands of the client are met...";
 		$scope.diagonalImage_body_max = $sce.trustAsHtml("K'nex Modular Furniture Design is composed of specialist cabinetry architects, \
 									offering locally designed and manufactured kitchen cabinets, closet cabinets \
 									and the likes for a niche clientele. Our core focus is on the functionality of \
@@ -169,5 +169,6 @@ app.controller('CompanyCtrl', function($state, $scope, $http, $location, $stateP
 		var func_name = $state.current.data.func;
 		var fn = window[func_name];
 		fn();
+		backgroundResize();
 	}
 });

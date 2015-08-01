@@ -54,6 +54,8 @@ $(function () {
                 .attr('data-gallery', '')
                 .appendTo(linksContainer);
         });
+        $('#content_body').css("height","auto");
+        backgroundResize();
     }
 
     $.fn.loadFunctions = function(){

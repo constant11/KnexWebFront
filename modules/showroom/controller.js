@@ -22,4 +22,5 @@ app.controller('ShowroomCtrl', function($scope, $http, $location) {
 
 	$.fn.images_test2(images);
 	$.fn.loadFunctions();
+	backgroundResize();
 });

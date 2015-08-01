@@ -1,26 +1,31 @@
 
-<div id="" class="body_backgroud wood_bg">
-	<div class="body_backgroud background_overlay">
-		<div class="diagonal_container vertical_center">
-			<div id="nav" class="diagonal_navigation" ui-view="diagonal_navigation">
+<div id="" class="wood_bg background fullscreen" data-img-width="2250" data-img-height="2250" style="height:1px">
+  <div class="background_overlay content-a" style="width: 100%; min-height: inherit; height: 1px;">
+    <div class="diagonal_container content-b">
+      <div id="nav" class="diagonal_navigation" ui-view="diagonal_navigation">
 
-			</div>
-			<div class="diagonal_image_container" ui-view="diagonal_image_container">
-				<div class="image_in_diagonal" ui-view="diagonal_image">
-					<div class="{{diagonalImage_class}}">
-						<div class="overlay_full">
-							<div class="text_container">
-								<div class="mih_l">
-								</div> 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      </div>
+      <div class="diagonal_image_container" ui-view="diagonal_image_container">
+        <div class="image_in_diagonal" ui-view="diagonal_image">
+          <div class="images {{diagonalImage_class}}" data-img-width="2246" data-img-height="1263">
+            <div class="overlay_full">
+              <div class="text_container vertical-center">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mih_l"></div>
+                </div>
+              </div>
+       <!--        <div class="text_container">
+                <div class="mih_l">
+                </div> 
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- 	<div ui-view="body">
-			IM IN HOMEPAGE INDEX
-		</div> -->
-	</div>
+  <!--  <div ui-view="body">
+      IM IN HOMEPAGE INDEX
+    </div> -->
+  </div>
 </div>

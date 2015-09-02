@@ -6,8 +6,8 @@ app.controller('ShowroomCtrl', function($scope, $http, $location) {
 	// 						{'label':'Collections', 'ref':'phonebook'},{'label':'Functionality', 'ref':'services'},
 	// 						{'label':'Press', 'ref':'services'},{'label':'Contact', 'ref':'services'}];
 
-	var path = "http://localhost/KnexAngular2/KnexWebAPI/images/company/";
-	var path_thumb = "images/company/thumbnail/";
+	var path = "http://api.knex-ph.com/KnexWebAPI/images/company/";
+	var path_thumb = "public/images/company/thumbnail/";
 
 	var images = [{'path_b':path+"closet_show_2_b.jpg", 'path_s':path_thumb+"closet_show_2_m.jpg", "title": "Closet"},
 					{'path_b':path+"closetshow_b.jpg", 'path_s':path_thumb+"closetshow_m.jpg", "title": "Closet"},

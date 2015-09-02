@@ -15,15 +15,15 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       url:'/w',
       views: {
         'header': {
-        templateUrl: 'modules/homepage/views/navigation.html',
+        templateUrl: 'public/modules/homepage/views/navigation.html',
         controller: 'HomePageCtrl'
         },
         'body': {
-        templateUrl: 'modules/homepage/views/index.html',
+        templateUrl: 'public/modules/homepage/views/index.html',
         controller: 'HomePageCtrl'
         },
         'footer': {
-        templateUrl: 'modules/homepage/views/footer.html',
+        templateUrl: 'public/modules/homepage/views/footer.html',
         controller: 'HomePageCtrl'
         },
       }
@@ -41,15 +41,15 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       parent:'homepage',
       views: {
         'diagonal_navigation@homepage': {
-        templateUrl: 'modules/company/views/_navigation.html',
+        templateUrl: 'public/modules/company/views/_navigation.html',
         controller: 'CompanyCtrl'
         },
         'diagonal_image_container@homepage': {
-        templateUrl: 'modules/company/views/_diagonal_image.html',
+        templateUrl: 'public/modules/company/views/_diagonal_image.html',
         controller: 'CompanyCtrl'
         },
         'footer@': {
-        templateUrl: 'modules/company/views/footer.html',
+        templateUrl: 'public/modules/company/views/footer.html',
         controller: 'CompanyCtrl'
         },
       },
@@ -74,7 +74,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       parent:'company',
       views: {
         'diagonal_image@company': {
-        // templateUrl: 'modules/company/views/_diagonal_image.html',
+        // templateUrl: 'public/modules/company/views/_diagonal_image.html',
         controller: 'CompanyCtrl'
         },
       },
@@ -87,7 +87,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       parent:'company',
       views: {
         'diagonal_image@company': {
-        // templateUrl: 'modules/company/views/_diagonal_image.html',
+        // templateUrl: 'public/modules/company/views/_diagonal_image.html',
         controller: 'CompanyCtrl'
         },
       },
@@ -99,7 +99,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       url:'/company_site',
       views: {
         'diagonal_image@company': {
-        // templateUrl: 'modules/company/views/_diagonal_image.html',
+        // templateUrl: 'public/modules/company/views/_diagonal_image.html',
         controller: 'CompanyCtrl'
         },
       },
@@ -111,7 +111,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       url:'/company_product',
       views: {
         'diagonal_image@company': {
-        // templateUrl: 'modules/company/views/_diagonal_image.html',
+        // templateUrl: 'public/modules/company/views/_diagonal_image.html',
         controller: 'CompanyCtrl'
         },
       },
@@ -124,10 +124,10 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       parent:'homepage',
       views: {
         'body@': {
-        templateUrl: 'modules/_system/contact_us.html'
+        templateUrl: 'public/modules/_system/contact_us.html'
         },
         'footer@': {
-        templateUrl: 'modules/company/views/footer.html',
+        templateUrl: 'public/modules/company/views/footer.html',
         controller: 'CompanyCtrl'
         },
       }
@@ -137,7 +137,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       parent:'homepage',
       views: {
         'body@': {
-        templateUrl: 'modules/showroom/views/index.html',
+        templateUrl: 'public/modules/showroom/views/index.html',
         controller: 'ShowroomCtrl'
         },        
       }
@@ -147,10 +147,10 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       parent:'homepage',
       views: {
         'body@': {
-        templateUrl: 'modules/_system/undermaintenance.html'
+        templateUrl: 'public/modules/_system/undermaintenance.html'
         },
         'footer@': {
-        templateUrl: 'modules/company/views/footer.html',
+        templateUrl: 'public/modules/company/views/footer.html',
         controller: 'CompanyCtrl'
         },
       }
@@ -160,11 +160,11 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       parent: 'homepage',
       views: {
         // 'header': {
-        // templateUrl: 'modules/services/views/services.html',
+        // templateUrl: 'public/modules/services/views/services.html',
         // controller: 'ServicesCtrl'
         // },
         'body@': {
-        templateUrl: 'modules/services/views/services.html',
+        templateUrl: 'public/modules/services/views/services.html',
         controller: 'ServicesCtrl'
         }
         // 'footer': {
@@ -173,21 +173,21 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
         // },
       }
       
-      // templateUrl: 'modules/services/views/services.html',sho
+      // templateUrl: 'public/modules/services/views/services.html',sho
       // controller: 'ServicesCtrl'
     })    
     .state('services.detail', {
       url: '/detail',
       views: {
         // 'header@': {
-        // templateUrl: 'modules/services/views/services2.html'
+        // templateUrl: 'public/modules/services/views/services2.html'
         // },
         'body': {
-        templateUrl: 'modules/services/views/services2.html'
+        templateUrl: 'public/modules/services/views/services2.html'
         }
       }
       
-      // templateUrl: 'modules/services/views/services.html',
+      // templateUrl: 'public/modules/services/views/services.html',
       // controller: 'ServicesCtrl'
     })
     .state('phonebook', {
@@ -196,7 +196,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
       views: {
         'header@services': {},
         'body': {
-        templateUrl: 'modules/phonebook/views/listview.html',
+        templateUrl: 'public/modules/phonebook/views/listview.html',
         controller: 'PhoneBookCtrl'
         }
         // 'footer': {
@@ -204,23 +204,23 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
         // controller: function($scope){ ... controller stuff just for graph view ... }
         // },
       }
-      // templateUrl: 'modules/phonebook/views/listview.html',
+      // templateUrl: 'public/modules/phonebook/views/listview.html',
       // controller: 'PhoneBookCtrl'
       //functionName: 'listview'
     })
     // .state('services', {
       // url:'/phonebook/create',
-      // templateUrl: 'modules/phonebook/views/editview.html',
+      // templateUrl: 'public/modules/phonebook/views/editview.html',
       // controller: 'PhoneBookCtrl'
       // //functionName: 'createview
     // })
     // .state('services', {
       // url:'/phonebook/edit/:contactid',
-      // templateUrl: 'modules/phonebook/views/editview.html',
+      // templateUrl: 'public/modules/phonebook/views/editview.html',
       // controller: 'PhoneBookCtrl'
       // //functionName: 'editview'
     // })
-
+ 
 }]);  
 
   

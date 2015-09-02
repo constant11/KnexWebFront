@@ -16,7 +16,7 @@ echo "
 	<script src='public/js/controller.js'></script>
 </head>
 <body ng-app='myApp'>
-	<div ng-view=''>sadd</div>
+	<div ng-view=''>sadd1</div>
 	
 </body>
 </html>

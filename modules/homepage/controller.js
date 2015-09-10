@@ -11,6 +11,7 @@ app.controller('HomePageCtrl', function($scope, $http, $location) {
 	$scope.diagonalImage_class = "iid_homepage";
 
 	backgroundResize();
+	$(".navbar-collapse").collapse('hide');
 
 	// $scope.company_profile = function(){
 	// 	console.log("qwertyuiop");

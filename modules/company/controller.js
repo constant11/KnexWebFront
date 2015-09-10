@@ -171,4 +171,6 @@ app.controller('CompanyCtrl', function($state, $scope, $http, $location, $stateP
 		fn();
 		backgroundResize();
 	}
+
+	$(".navbar-collapse").collapse('hide');
 });
